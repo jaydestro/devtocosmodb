@@ -32,7 +32,7 @@ To get started, the JSON file that's provided in the repository is a pretty simp
 ![Example JSON Document](https://thepracticaldev.s3.amazonaws.com/i/zflegv1l94c4k02pqndn.png)
 
 
-You can create your own if you like, but to make it simple this tutorial provides  a 1052 entry example document database to import into Cosmos DB.
+You can create your own if you like, but to make it simple this tutorial provides a 1052 entry example document database to import into Cosmos DB.
 
 Go to the Azure Portal and create an Azure Cosmos DB API for MongoDB deployment for our data.
 
@@ -46,7 +46,7 @@ For this example we won't enable either Geo-Redundancy or Multi-Region writes, t
 
 ![Adding Cosmos DB](https://thepracticaldev.s3.amazonaws.com/i/cojlvgkrdrv2v7m6zts6.png)
 
-Click next and move on to the Network section, in this section we'll need to create a virtual network and then permit ourselves to connect to our API endpoint. 
+Click next and move on to the Network section, in this section, we'll need to create a virtual network and then permit ourselves to connect to our API endpoint. 
 
 We begin by creating a new VNET and selecting the `10.2.0.0/16` network.  You will create a default subnet for our tutorial.  In more complex solutions, you may want to create the subnet for this to be private only to further restrict your data's exposure.  For now this example will use a single `10.2.0.0/24` subnet.  Make sure you permit your IP so that you are able to access the endpoint created.
 
@@ -89,7 +89,7 @@ By now the Cosmos DB deployment should be ready to go and get the connection str
 
 Click go to resource and find the Cosmos DB portal for your new database where we can begin storing collections of documents we can query using the MongoDB API.
 
-Click Quickstart and find the "Others" section, this will provide you with the login information required to use `mongoimport`and import your json.
+Click Quickstart and find the "Others" section, this will provide you with the login information required to use `mongoimport` and import your json.
 
 ![Quickstart info](https://thepracticaldev.s3.amazonaws.com/i/tid208yjucvfpmjhhcn8.png)
 
@@ -113,7 +113,7 @@ An expected output should look something like this:
 
 ```
 
-Now lets look at the new collection and documents in the Data Explorer within the portal in Cosmos DB:
+Now let's look at the new collection and documents in the Data Explorer within the portal in Cosmos DB:
 
 
 ![Data Explorer](https://thepracticaldev.s3.amazonaws.com/i/4bd4uuj6ndm78oq1btw4.png)
